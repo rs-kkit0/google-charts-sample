@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 import { AppComponent } from './app.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PieChartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
