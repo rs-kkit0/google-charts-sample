@@ -15,6 +15,7 @@ export class PieChartComponent implements OnInit {
     ['Olives', 1],
     ['Zucchini', 1],
     ['Pepperoni', 2],
+    ['Green Pepper', 2]
   ];
   columnNames = ['Topping', 'Slices'];
   options = {
