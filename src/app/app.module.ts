@@ -5,16 +5,18 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { AppComponent } from './app.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PieChartComponent,
-    LineChartComponent
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
