@@ -1,20 +1,37 @@
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
 .container {
     display: flex;
 }
 .column {
-    margin: 1em;
-
-    .column-header {
-        padding: 0.8em;
-        background-color: aqua;
-        border-radius: 10px 10px 0 0;
+    .box {
+        margin: 1em;
     }
 
-    .column-body {
+    .box-header {
+        padding: 0.8em;
+        border-radius: 10px 10px 0 0;
+        h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        p {
+            font-weight: bold;
+            .value {
+                font-size: 1.5em;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .box-body {
         box-sizing: border-box;
         border: solid 1px black;
 
-        .column-content {
+        .box-content {
             display: flex;
             height: 40px;
             border-bottom: dashed 1px black;
@@ -22,12 +39,60 @@
                 border-bottom: none;
             }
             .caption {
-                background-color: skyblue;
-                width: 180px;
+                display: flex;
+                align-items: center;
+                width: 140px;
+                box-sizing: border-box;
+                padding: 0px 5px;
+                font-weight: bold;
             }    
             .content {
-                width: 180px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 140px;
+                box-sizing: border-box;
+                padding: 0px 5px;
+                font-weight: bold;
+                font-size: 1.5em;
+
+                .unit {
+                    font-size: 16px;
+                }
             }
         }
+    }
+}
+.column-income {
+    @extend .column;
+
+    .box-header {
+        background-color: #5db3e8;
+    }
+
+    .caption {
+        background-color: #b8dcf4;
+    }
+}
+.column-expense {
+    @extend .column;
+
+    .box-header {
+        background-color: #f18409;
+    }
+
+    .caption {
+        background-color: #fcdcbc;
+    }
+}
+.column-other {
+    @extend .column;
+
+    .box-header {
+        background-color: #3db034;
+    }
+
+    .caption {
+        background-color: #e4f4c6;
     }
 }

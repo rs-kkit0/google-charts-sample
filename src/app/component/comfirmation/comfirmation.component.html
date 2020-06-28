@@ -1,31 +1,57 @@
 <h1>家計収支データ</h1>
 <div class="container">
-    <div class="column">
-        <div class="column-header">
-            <h2>収入</h2>
-            <p>月間{{ incomeTotal }}万円</p>
-        </div>
-        <div class="column-body">
-            <div class="column-content" *ngFor="let income of incomeList">
-                <div class="caption">{{ income.caption }}</div>
-                <div class="content">{{ income.amount }}万円</div>
+    <div class="column-income">
+        <div class="box">
+            <div class="box-header">
+                <h2>収入</h2>
+                <p>月間<span class="value">{{ incomeTotal }}</span>万円</p>
+            </div>
+            <div class="box-body">
+                <div class="box-content" *ngFor="let income of incomeList">
+                    <div class="caption" [innerHTML]="income.caption"></div>
+                    <div class="content">{{ income.amount }}<span class="unit">万円</span></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="column">
-        <div class="column-header">
-            <h2>支出</h2>
-            <p>月間{{ expenseTotal }}円</p>
-        </div>
-        <div class="column-body">
-            <div class="column-content" *ngFor="let expense of expenseList">
-                <div class="caption">{{ expense.caption }}</div>
-                <div class="content">{{ expense.amount }}万円</div>
+    <div class="column-expense">
+        <div class="box">
+            <div class="box-header">
+                <h2>支出</h2>
+                <p>月間<span class="value">{{ expenseTotal }}</span>万円</p>
+            </div>
+            <div class="box-body">
+                <div class="box-content" *ngFor="let expense of expenseList">
+                    <div class="caption">{{ expense.caption }}</div>
+                    <div class="content">{{ expense.amount }}<span class="unit">万円</span></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="column">
-        <div>貯蓄</div>
-        <div>投資</div>
+    <div class="column-other">
+        <div class="box">
+            <div class="box-header">
+                <h2>貯蓄</h2>
+                <p>合計<span class="value">{{ savings }}</span>万円</p>
+            </div>
+            <div class="box-body">
+                <div class="box-content" *ngFor="let savings of savingsList">
+                    <div class="caption">{{ savings.caption }}</div>
+                    <div class="content">{{ savings.amount }}<span class="unit">万円</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>投資</h2>
+                <p>合計<span class="value">{{ investment }}</span>万円</p>
+            </div>
+            <div class="box-body">
+                <div class="box-content" *ngFor="let investment of investmentList">
+                    <div class="caption">{{ investment.caption }}</div>
+                    <div class="content">{{ investment.amount }}<span class="unit">万円</span></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
