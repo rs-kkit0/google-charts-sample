@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+}
+.column {
+    margin: 1em;
+
+    .column-header {
+        padding: 0.8em;
+        background-color: aqua;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .column-body {
+        box-sizing: border-box;
+        border: solid 1px black;
+
+        .column-content {
+            display: flex;
+            height: 40px;
+            border-bottom: dashed 1px black;
+            &:last-child {
+                border-bottom: none;
+            }
+            .caption {
+                background-color: skyblue;
+                width: 180px;
+            }    
+            .content {
+                width: 180px;
+            }
+        }
+    }
+}

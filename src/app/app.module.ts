@@ -8,6 +8,7 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DiagnosisComponent } from './component/diagnosis/diagnosis.component';
 import { ResultComponent } from './component/result/result.component';
+import { ComfirmationComponent } from './component/comfirmation/comfirmation.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ResultComponent } from './component/result/result.component';
     LineChartComponent,
     DiagnosisComponent,
     ResultComponent,
+    ComfirmationComponent,
   ],
   imports: [
     BrowserModule,
