@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SimulationService } from 'src/app/simulation.service';
+import { SimulationService } from 'src/app/service/simulation.service';
 
 @Component({
   selector: 'app-result',
