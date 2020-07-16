@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DiagnosisComponent } from './component/diagnosis/diagnosis.component';
 import { ResultComponent } from './component/result/result.component';
 import { ComfirmationComponent } from './component/comfirmation/comfirmation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ComfirmationComponent } from './component/comfirmation/comfirmation.com
   imports: [
     BrowserModule,
     GoogleChartsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
