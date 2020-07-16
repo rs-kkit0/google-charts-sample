@@ -1,9 +1,21 @@
 <div class="container">
     <h1>LifePlan Diagnosis</h1>
-    <form>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" required>
+    <form class="example-form">
+        <div class="section">
+            <mat-form-field>
+                <mat-label>名前</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="section">
+            <mat-radio-group>
+                <mat-radio-button value="1">
+                    男性 <i class="fa fa-male" aria-hidden="true"></i>
+                </mat-radio-button>
+                <mat-radio-button value="2">
+                    女性 <i class="fa fa-female" aria-hidden="true"></i>
+                </mat-radio-button>
+            </mat-radio-group>
         </div>
     </form>
 </div>
