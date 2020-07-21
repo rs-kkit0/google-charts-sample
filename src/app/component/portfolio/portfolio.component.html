@@ -1,1 +1,11 @@
-<p>portfolio works!</p>
+<div class="chart-area">
+    <google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options">
+    </google-chart>
+</div>
+<ng-container *ngFor="let data of info">
+    <h2>{{ data.name }}</h2>
+    <div>日本株式: {{ data.code_10 }}%</div>
+    <div>先進国株式: {{ data.code_11 }}%</div>
+    <div>新興国株式: {{ data.code_12 }}%</div>
+
+</ng-container>
