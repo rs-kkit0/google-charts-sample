@@ -5,6 +5,7 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 import { DiagnosisComponent } from './component/diagnosis/diagnosis.component';
 import { ResultComponent } from './component/result/result.component';
 import { ComfirmationComponent } from './component/comfirmation/comfirmation.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
 
 const routes: Routes = [
   { path: 'pie-chart', component: PieChartComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'diagnosis', component: DiagnosisComponent },
   { path: 'comfirmation', component: ComfirmationComponent },
   { path: 'result', component: ResultComponent },
+  { path: 'portfolio', component: PortfolioComponent },
 ]
 
 @NgModule({

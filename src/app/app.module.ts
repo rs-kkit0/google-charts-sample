@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     DiagnosisComponent,
     ResultComponent,
     ComfirmationComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
