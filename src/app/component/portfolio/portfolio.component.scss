@@ -1,0 +1,15 @@
+.section {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+        width: 100%;
+    }
+    .asset {
+        width: 200px;
+        span {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}

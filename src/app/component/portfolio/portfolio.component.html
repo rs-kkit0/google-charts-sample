@@ -2,10 +2,14 @@
     <google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options">
     </google-chart>
 </div>
-<ng-container *ngFor="let data of info">
+<div class="section" *ngFor="let data of info">
     <h2>{{ data.name }}</h2>
-    <div>日本株式: {{ data.code_10 }}%</div>
-    <div>先進国株式: {{ data.code_11 }}%</div>
-    <div>新興国株式: {{ data.code_12 }}%</div>
-
-</ng-container>
+    <div class="asset"><span>日本株式</span>:{{ data.code_10 }}%</div>
+    <div class="asset"><span>先進国株式</span>:{{ data.code_11 }}%</div>
+    <div class="asset"><span>新興国株式</span>:{{ data.code_12 }}%</div>
+    <div class="asset"><span>日本債券</span>:{{ data.code_20 }}%</div>
+    <div class="asset"><span>先進国債券</span>:{{ data.code_21 }}%</div>
+    <div class="asset"><span>新興国債券</span>:{{ data.code_22 }}%</div>
+    <div class="asset"><span>国内REIT</span>:{{ data.code_30 }}%</div>
+    <div class="asset"><span>先進国REIT</span>:{{ data.code_31 }}%</div>
+</div>
