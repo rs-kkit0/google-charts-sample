@@ -1,0 +1,22 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.tr {
+    display: flex;
+    border-bottom: solid 1px black;
+}
+.th, .td {
+    width: 100px;
+    margin: 0.5em 0;
+    border-right: solid 1px black;
+}
+.th {
+    display: flex;
+    justify-content: center;
+}
+
+.example-form {
+    margin: 1em 0;
+}

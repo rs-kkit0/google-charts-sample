@@ -17,6 +17,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { NutritionComponent } from './component/nutrition/nutrition.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PortfolioComponent } from './component/portfolio/portfolio.component';
     ResultComponent,
     ComfirmationComponent,
     PortfolioComponent,
+    NutritionComponent,
   ],
   imports: [
     BrowserModule,

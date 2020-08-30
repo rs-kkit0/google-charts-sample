@@ -1,7 +1,9 @@
 <div class="chart-area">
-    <google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options">
+    <google-chart [title]="title" [type]="type" [data]="data" [columns]="columnNames" [options]="options"
+        [dynamicResize]="true">
     </google-chart>
 </div>
+<button (click)="test()" mat-button style="border: solid;">ボタン</button>
 <div class="section" *ngFor="let data of info">
     <h2>{{ data.name }}</h2>
     <div class="asset"><span>日本株式</span>:{{ data.code_10 }}%</div>

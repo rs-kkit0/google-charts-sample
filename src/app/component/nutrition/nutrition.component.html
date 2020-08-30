@@ -1,0 +1,33 @@
+<div class="table">
+    <div class="tr thead">
+        <div class="th"></div>
+        <div class="th">献立</div>
+        <div class="th">食材</div>
+        <div class="th">量(g)</div>
+        <div class="th">エネルギー</div>
+        <div class="th">たんぱく質</div>
+        <div class="th">脂質</div>
+        <div class="th">炭水化物</div>
+    </div>
+    <div class="tr tbody" *ngFor="let nutorition of nutoritions">
+        <div class="td">朝</div>
+        <div class="td"></div>
+        <div class="td">{{ nutorition.name }}</div>
+        <div class="td">{{ nutorition.gram }}</div>
+        <div class="td">{{ nutorition.calory }}</div>
+        <div class="td">{{ nutorition.protein }}</div>
+        <div class="td">{{ nutorition.fat }}</div>
+        <div class="td">{{ nutorition.carbohydrate }}</div>
+    </div>
+    <form class="example-form">
+        <mat-form-field>
+            <mat-label>食材</mat-label>
+            <input matInput required [(ngModel)]="syokuzai" name="syokuzai">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>量(g)</mat-label>
+            <input matInput required [(ngModel)]="gram" name="gram">
+        </mat-form-field>
+        <button mat-raised-button (click)="add()">追加</button>
+    </form>
+</div>
